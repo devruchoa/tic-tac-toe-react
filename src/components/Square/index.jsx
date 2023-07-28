@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
-import './Board.css'
+import './Square.css'
 
-export default function Square() {
-    const [value, setValue] = useState(null);
-
-    function handleClick() {
-        setValue('X');
-    }
-
+export default function Square({ value, onSquareClick }) {
     return (
         <button
             className='square'
-            onClick={handleClick}
+            onClick={onSquareClick}
         >
             {value}
         </button>

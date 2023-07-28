@@ -1,8 +1,9 @@
 import React from 'react'
-import Board from '../../components/Board'
+import Game from '../../components/Game'
+
 
 export default function HomePage() {
   return (
-    <Board />
+    <Game />
   )
 }
